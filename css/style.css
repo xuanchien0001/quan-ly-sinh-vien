@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  background-color: #414d50;
+  height: 3.2rem;
+  width: 100% !important;
+}
+header .logo {
+  margin-right: 5.6rem;
+}
+header .logo a img {
+  width: 2.5rem;
+  height: 2.3rem;
+}
+header .btn-menu a i {
+  font-size: 1.8rem;
+  color: #c4c4c4c2;
+}
+
+#sidebar.active .hidden {
+  opacity: 0;
+  display: none;
+}
+#sidebar.active .dropdown-toggle::after {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
