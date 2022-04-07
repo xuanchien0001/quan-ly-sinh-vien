@@ -49,20 +49,14 @@
                 </a>
             </div>
         </header>
-        <div class=" d-flex ">
 
-
-        </div>
     </div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-
-
-            <ul class="list-unstyled components">
-
+            <ul class="list-unstyled components nav">
                 <li class="active">
-                    <a href="#">
+                    <a class="active" href="#home" data-toggle="tab">
                         <img src="./img/menu/home.svg" alt="">
                         <span class="hidden">Trang chủ</span>
                     </a>
@@ -72,15 +66,15 @@
                         <img src="./img/menu/attach.svg" alt="">
                         <span class="hidden">Đăng ký đồ án tốt nghiệp</span>
                     </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">
+                    <ul class="collapse list-unstyled nav hidden" id="homeSubmenu">
+                        <li class=" ">
+                            <a href="#menu1" data-toggle="tab" class="">
                                 <img src="./img/menu/dang-ky-do-an.png" style="width:28px" alt="">
                                 <span class="ml-2">Đăng ký làm đồ án</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class=" ">
+                            <a href="#menu2" data-toggle="tab" class="">
                                 <img src="./img/menu/dang-ky-do-an.png" style="width:28px" alt="">
                                 <span class="ml-2">Kết quả đăng ký đồ án</span>
                             </a>
@@ -88,7 +82,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#menu3" data-toggle="tab">
                         <img src="./img/menu/search.svg" alt="">
                         <span class="hidden"> Tìm kiếm tài liệu</span>
                     </a>
@@ -98,7 +92,7 @@
                         <img src="./img/menu/attach.svg" alt="">
                         <span class="hidden"> Nộp đồ án</span>
                     </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <ul class="collapse list-unstyled hidden" id="pageSubmenu">
                         <li>
                             <a href="#">
                                 <img src="./img/menu/item-attach.png" style="width:28px" alt="">
@@ -114,7 +108,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#menu4" data-toggle="tab">
                         <img src="./img/menu/people.svg" alt="">
                         <span class="hidden">Thông tin sinh viên</span>
                     </a>
@@ -126,7 +120,7 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -151,46 +145,40 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
 
-            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="menu3" class="container tab-pane fade"><br>
+                    <h3>Menu 3</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="menu4" class="container tab-pane fade"><br>
+                    <h3>Menu 4</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam.</p>
+                </div>
+            </div>
 
-            <div class="line"></div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
 
-            <div class="line"></div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 

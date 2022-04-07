@@ -91,6 +91,7 @@ span {
     padding: 20px 10px;
     text-align: center;
     font-size: 0.85em;
+    width: 80px;
 }
 
 #sidebar.active ul li a i {
@@ -132,6 +133,7 @@ span {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    width: 290px;
 }
 
 #sidebar ul li a:hover {
